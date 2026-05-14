@@ -1,0 +1,3 @@
+theme: jekyll-theme-minimal
+title: Arduino Piano Final
+description: A walkthrough of how to create a simple 1-Octave Piano using an ESP32 breadboard and Arduino.ide
