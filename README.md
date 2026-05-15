@@ -30,26 +30,7 @@ To install the code yourself go to
 
 Now I will briefly walk through how the code works:
 ## Setup
--#define PIN_BUZZER 21
--#define PRESS_VAL   180000    //Set a threshold to judge touch
--#define RELEASE_VAL 75000     //Set a threshold to judge release
--#define CHN 0
-
--bool T8Touch = false;
--bool T3Touch = false;
--bool T9Touch = false;
--bool T10Touch = false;
--bool T11Touch = false;
--bool T12Touch = false;
--bool T13Touch = false;
--bool T14Touch = false;
--void setup() {
--  Serial.begin(115200);
--  pinMode(PIN_BUZZER, OUTPUT);
--  ledcAttachChannel(PIN_BUZZER, 2000, 10, CHN);  //attach the led pin to pwm channel
--  ledcWriteTone(PIN_BUZZER, 2000);        //Sound at 2KHz for 0.3 seconds
--  delay(300);
--}
+(Arduino.Piano.C)
 This section defines the passive buzzer as the output, creates the channel that the buzzer will use, and creates boolean values for each channel on the breadboard so that when the code -itself runs the different sensors won't cancel each other out.
 
 ## Loop
